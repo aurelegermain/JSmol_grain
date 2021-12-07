@@ -5,7 +5,7 @@ REMARK   6  PDB FORMAT V. 2.2, 16-DEC-1996
 REMARK   6  created by MOLDRAW 32-bit version
 REMARK   6  http://www.moldraw.unito.it
 REMARK 6
-ATOM      1  h   MOL A   0       5.285  -2.875   0.649  1.00  0.00            h 
+ATOM      1  h   MOL A   0       5.285  -2.875   0.649  1.00  0.00            H 
 ATOM      2  o   MOL A   0       4.670  -2.118   0.551  1.00  0.00            o 
 ATOM      3  h   MOL A   0       4.071  -2.189   1.328  1.00  0.00            h 
 ATOM      4  h   MOL A   0       3.195   0.532   0.753  1.00  0.00            h 
