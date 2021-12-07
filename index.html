@@ -16,14 +16,21 @@ jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
 <p>
 <table>
 <tr>
+    <div>
+      <a href="#" onclick="jmolScript('load structures/100.xyz');" style="text-decoration:none">100</a>
+    	<a href="#" onclick="jmolScript('load structures/200.xyz');" style="text-decoration:none">200</a>
+      <a href="#" onclick="jmolScript('load structures/300.xyz');" style="text-decoration:none">300</a>
+      <a href="#" onclick="jmolScript('load structures/400.xyz');" style="text-decoration:none">400</a>
+      <a href="#" onclick="jmolScript('load structures/500.xyz');" style="text-decoration:none">500</a>
+      <a href="#" onclick="jmolScript('load structures/600.xyz');" style="text-decoration:none">600</a>
+      <a href="#" onclick="jmolScript('load structures/700.xyz');" style="text-decoration:none">700</a>
+      <a href="#" onclick="jmolScript('load structures/800.xyz');" style="text-decoration:none">800</a>
+      <a href="#" onclick="jmolScript('load structures/900.xyz');" style="text-decoration:none">900</a>
+      <a href="#" onclick="jmolScript('load structures/1000.xyz');" style="text-decoration:none">1000</a>
+    </div>
 <script type="text/javascript">
 <!-- specificare molecola... -->
 var script="load 'structures/100.xyz';" + "background white; zoom 130; anim mode loop; anim on";
-      
-      function size_choice(size) {
-            var script="load 'structures/${size}.xyz';" + "background white; zoom 100; anim mode loop; anim on";
-      }
-
 jmolApplet(700, script); 
 </script>
 </tr>
@@ -58,12 +65,6 @@ jmolApplet(700, script);
       "background black",
       ]);
 </script>
-<script>
-jmolButton([size_choice, "200"], "label", "id", "title")
-</script>
-    <div>
-    	<a href="#" onclick="jmolScript('load structures/200.xyz');" style="text-decoration:none">200</a>
-    </div>
 </td>
 </tr>
 </table>
