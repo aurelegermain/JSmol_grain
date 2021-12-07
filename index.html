@@ -59,14 +59,7 @@ jmolApplet(700, script);
       ]);
 </script>
 <script>
-      jmolMenu([
-      ["load 'structures/100.xyz", null, "selected"],
-      "load 'structures/200.xyz", 
-      "load 'structures/300.xyz",
-      "load 'structures/400.xyz",
-      "load 'structures/500.xyz",
-      "load 'structures/600.xyz",
-      ]);
+jmolButton([size_choice, 200], label, id, title)
 </script>
     <div>
     	<input type="button" onclick="size_choice(100)" value="Change Size">
