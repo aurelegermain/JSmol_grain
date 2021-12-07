@@ -16,8 +16,16 @@ jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
 <p>
 <table>
 <tr>
+    BE computation
+     <div>
+        Grain structure: 
+      <button onclick="jmolScript('load structures/sphere.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+          NH<sub>3</sub>
+      </button>
+    </div>
+    1000 H<sub>2</sub>O Grain
     <div>
-        Grain size: 
+        GFN2 structures: 
       <button onclick="jmolScript('load structures/100.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
       100
       </button>
