@@ -19,6 +19,11 @@ jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
 <script type="text/javascript">
 <!-- specificare molecola... -->
 var script="load 'structures/500.xyz';" + "background white; zoom 100; anim mode loop; anim on";
+
+      function size_choice(size) {
+            var script="load 'structures/${size}.xyz';" + "background white; zoom 100; anim mode loop; anim on";
+      }
+
 jmolApplet(700, script); 
 </script>
 </tr>
@@ -53,6 +58,9 @@ jmolApplet(700, script);
       "background black",
       ]);
 </script>
+    <div>
+    	<input type="button" onclick="size_choice(100)" value="Change Size">
+    </div>
 </td>
 </tr>
 </table>
