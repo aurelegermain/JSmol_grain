@@ -1,0 +1,109 @@
+<head>
+<title>Grain structure JSmol visualisation</title>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/js/Jmol2.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+Jmol.Info=[]
+Jmol.Info.serverURL= "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php"
+jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
+</script>
+</head>
+<body>
+<div id="mainContent">
+<center>
+<h2>Grain structure JSmol visualisation</h2>
+<p>
+<table>
+<tr>
+    <p>
+      1000 H<sub>2</sub>O grain GFN2 structures: 
+      <button onclick="jmolScript('load structures/100.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      100
+      </button>
+      <button onclick="jmolScript('load structures/200.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      200
+      </button>
+      <button onclick="jmolScript('load structures/300.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      300
+      </button>
+      <button onclick="jmolScript('load structures/400.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      400
+      </button>
+      <button onclick="jmolScript('load structures/500.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      500
+      </button>
+      <button onclick="jmolScript('load structures/600.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      600
+      </button>
+      <button onclick="jmolScript('load structures/700.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      700
+      </button>
+      <button onclick="jmolScript('load structures/800.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      800
+      </button>
+      <button onclick="jmolScript('load structures/900.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      900
+      </button>
+      <button onclick="jmolScript('load structures/1000.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+      1000
+      </button>
+    </p>
+        
+     <p>
+        BE computation grain structure: 
+      <button onclick="jmolScript('load structures/sphere.xyz ;background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04');">
+          NH<sub>3</sub>
+      </button>
+    </p>
+<script type="text/javascript">
+<!-- specificare molecola... -->
+var script="load 'structures/200.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
+jmolApplet(700, script); 
+</script>
+</tr>
+<p>
+<tr>
+<script>
+      jmolRadioGroup([
+      ["spacefill off", "sticks"],
+      ["spacefill 25%", "sticks and balls", "checked"],
+      ["spacefill 100%", "van der Waals"]
+      ]); jmolBr(); jmolBr();
+</script>
+<script>
+      jmolRadioGroup([
+      ["hbonds off", "H-bonds off"],
+      ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on", "checked"]
+      ]); jmolBr(); jmolBr();
+</script>
+<td width="150">
+<script>
+      jmolCheckbox("spin on", "spin off", "spin"); 
+      jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
+</script>
+</td>
+<td width="150" >
+<script>
+      jmolButton("reset", "Starting"); 
+</script>
+</td>
+<td width="100" >
+<script>
+      jmolMenu([
+      ["background white", null, "selected"],
+      "background skyblue", 
+      "background yellow",
+      "background salmon",
+      "background palegreen",
+      "background black",
+      ]);
+</script>
+</td>
+</tr>
+</table>
+<P>
+</center>
+</div>
+</body>
+</html>
