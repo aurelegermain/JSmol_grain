@@ -42,6 +42,7 @@ jmolApplet(size_jsmol, script);
 <p>
 <tr>
       <center>
+            
 <script>
       jmolRadioGroup([
       ["spacefill off", "sticks"],
@@ -59,19 +60,10 @@ jmolApplet(size_jsmol, script);
       </tr>
       <tr>
            <center>
-<td>
 <script>
       jmolCheckbox("spin on", "spin off", "spin"); 
       jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
-</script>
-</td>
-<td>
-<script>
       jmolButton("reset", "Starting"); 
-</script>
-</td>
-<td>
-<script>
       jmolMenu([
       ["background white", null, "selected"],
       "background skyblue", 
@@ -81,7 +73,6 @@ jmolApplet(size_jsmol, script);
       "background black",
       ]);
 </script>
-</td>
 </center>
 </tr>
 </table>
