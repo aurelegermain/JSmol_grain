@@ -92,7 +92,7 @@ else {
 <script type="text/javascript">
 <!-- estudenates... -->
 var script="load 'structures/500.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
-jmolApplet(400, script); 
+jmolApplet(size_jsmol, script); 
 </script>
 </tr>
 <p>
@@ -148,11 +148,12 @@ else {
 <script type="text/javascript">
 <!-- estudenates... -->
 var script="load 'structures/900.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
-jmolApplet(400, script); 
+jmolApplet(size_jsmol, script); 
 </script>
 </tr>
 <p>
 <tr>
+      <center>
 <script>
       jmolRadioGroup([
       ["spacefill off", "sticks"],
@@ -160,6 +161,7 @@ jmolApplet(400, script);
       ["spacefill 100%", "van der Waals"]
       ]); jmolBr(); jmolBr();
 </script>
+      </center>
 <script>
       jmolRadioGroup([
       ["hbonds off", "H-bonds off"],
