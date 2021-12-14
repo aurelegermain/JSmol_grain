@@ -41,6 +41,7 @@ jmolApplet(size_jsmol, script);
 </tr>
 <p>
 <tr>
+      <center>
 <script>
       jmolRadioGroup([
       ["spacefill off", "sticks"],
@@ -54,18 +55,24 @@ jmolApplet(size_jsmol, script);
       ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on", "checked"]
       ]); jmolBr(); jmolBr();
 </script>
+      </center>
 <td width="100">
+      <center>
 <script>
       jmolCheckbox("spin on", "spin off", "spin"); 
       jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
 </script>
+      </center>
 </td>
 <td width="100" >
+      <center>
 <script>
       jmolButton("reset", "Starting"); 
 </script>
+      </center>
 </td>
 <td width="100" >
+      <center>
 <script>
       jmolMenu([
       ["background white", null, "selected"],
@@ -76,6 +83,7 @@ jmolApplet(size_jsmol, script);
       "background black",
       ]);
 </script>
+      </center>
 </td>
 </tr>
 </table>
@@ -97,6 +105,7 @@ jmolApplet(size_jsmol, script);
 </tr>
 <p>
 <tr>
+      <center>
 <script>
       jmolRadioGroup([
       ["spacefill off", "sticks"],
@@ -133,6 +142,7 @@ jmolApplet(size_jsmol, script);
       ]);
 </script>
 </td>
+      </center>
 </tr>
 </table>
 <script type="text/javascript">
@@ -161,7 +171,6 @@ jmolApplet(size_jsmol, script);
       ["spacefill 100%", "van der Waals"]
       ]); jmolBr(); jmolBr();
 </script>
-      </center>
 <script>
       jmolRadioGroup([
       ["hbonds off", "H-bonds off"],
@@ -191,6 +200,7 @@ jmolApplet(size_jsmol, script);
       ]);
 </script>
 </td>
+      </center>
 </tr>
 </table>
 <script type="text/javascript">
