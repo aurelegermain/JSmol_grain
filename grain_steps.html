@@ -63,15 +63,6 @@ jmolApplet(size_jsmol, script);
 <script>
       jmolCheckbox("spin on", "spin off", "spin"); 
       jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
-      jmolButton("reset", "Starting"); 
-      jmolMenu([
-      ["background white", null, "selected"],
-      "background skyblue", 
-      "background yellow",
-      "background salmon",
-      "background palegreen",
-      "background black",
-      ]);
 </script>
 </center>
 </tr>
@@ -108,27 +99,10 @@ jmolApplet(size_jsmol, script);
       ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on", "checked"]
       ]); jmolBr(); jmolBr();
 </script>
-<td width="100">
+<td>
 <script>
       jmolCheckbox("spin on", "spin off", "spin"); 
       jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
-</script>
-</td>
-<td width="100" >
-<script>
-      jmolButton("reset", "Starting"); 
-</script>
-</td>
-<td width="100" >
-<script>
-      jmolMenu([
-      ["background white", null, "selected"],
-      "background skyblue", 
-      "background yellow",
-      "background salmon",
-      "background palegreen",
-      "background black",
-      ]);
 </script>
 </td>
       </center>
