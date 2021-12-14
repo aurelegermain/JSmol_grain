@@ -1,0 +1,120 @@
+<head>
+<title>Grain structure JSmol visualisation</title>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/js/Jmol2.js" type="text/javascript"></script>
+<script type="text/javascript">
+Jmol.Info=[]
+Jmol.Info.serverURL= "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php"
+jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
+</script>
+</head>
+<body>
+<div id="mainContent">
+<center>
+<h2>Grain structure JSmol visualisation</h2>
+<p>
+<table>
+<tr>
+<td>
+<table>
+      <tr><center><h4>200 H<sub>2</sub>O</h4></center></tr>
+<tr>
+<script type="text/javascript">
+var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+if (width<height) {
+      var size_jsmol = width*0.90
+      }
+else {
+      var size_jsmol = (width/3)*0.90
+      }
+
+<!-- estudenates... -->
+var script="load 'structures/200.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
+jmolApplet(size_jsmol, script); 
+</script>
+</tr>
+<p>
+<tr>
+      <center>
+            
+<script>
+      jmolRadioGroup([
+      ["spacefill off", "sticks"],
+      ["spacefill 25%", "sticks and balls", "checked"],
+      ["spacefill 100%", "van der Waals"]
+      ]); jmolBr(); jmolBr();
+</script>
+<script>
+      jmolRadioGroup([
+      ["hbonds off", "H-bonds off"],
+      ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on", "checked"]
+      ]); jmolBr(); jmolBr();
+</script>
+<script>
+      jmolCheckbox("spin on", "spin off", "spin"); 
+      jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
+</script>
+</center>
+</tr>
+</table>
+<script type="text/javascript">
+if (width<height) {
+      document.write("</td></tr><tr><td>");
+}
+else {
+      document.write("</td><td>");
+}
+</script>
+<table>
+      <tr><center><h4>500 H<sub>2</sub>O</h4></center></tr>
+<tr>
+<script type="text/javascript">
+<!-- estudenates... -->
+var script="load 'structures/500.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
+jmolApplet(size_jsmol, script); 
+</script>
+</tr>
+<p>
+<tr>
+      <center>
+<script>
+      jmolRadioGroup([
+      ["spacefill off", "sticks"],
+      ["spacefill 25%", "sticks and balls", "checked"],
+      ["spacefill 100%", "van der Waals"]
+      ]); jmolBr(); jmolBr();
+</script>
+<script>
+      jmolRadioGroup([
+      ["hbonds off", "H-bonds off"],
+      ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on", "checked"]
+      ]); jmolBr(); jmolBr();
+</script>
+<script>
+      jmolCheckbox("spin on", "spin off", "spin"); 
+      jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
+</script>
+      </center>
+</tr>
+</table>
+<script type="text/javascript">
+if (width<height) {
+      document.write("</td></tr>");
+}
+else {
+      document.write("</td></tr>");
+}
+</script>
+</table>
+<P>
+</center>
+</div>
+</body>
+</html>
