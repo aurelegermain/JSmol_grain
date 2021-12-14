@@ -187,8 +187,14 @@ jmolApplet(400, script);
 </td>
 </tr>
 </table>
-</td>
-</tr>
+<script type="text/javascript">
+if (width<height) {
+      document.write("</tr>");
+}
+else {
+      document.write("</td>");
+}
+</script>
 </table>
 <P>
 <i>Piero Ugliengo, 24/11/2019</i>
