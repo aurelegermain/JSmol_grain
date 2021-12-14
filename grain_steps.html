@@ -18,7 +18,19 @@ jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
 <td>
 <table>
 <tr>
+      <p id="test"></p>
 <script type="text/javascript">
+var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+if (width<height) {
+      document.getElementById("test").innerHTML = "Prout";
+}
 <!-- estudenates... -->
 var script="load 'structures/200.xyz';" + "background white; zoom 100; anim mode loop; anim on";
 jmolApplet(400, script); 
