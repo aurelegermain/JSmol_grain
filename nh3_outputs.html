@@ -17,7 +17,7 @@ jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
 <tr>
 <td>
 <table>
-      <tr><center><h4>200 H<sub>2</sub>O</h4></center></tr>
+      <tr><center><h4>(a) Starting positions of NH<sub>3</sub></h4></center></tr>
 <tr>
 <script type="text/javascript">
 var width = window.innerWidth
@@ -36,7 +36,7 @@ else {
       }
 
 <!-- estudenates... -->
-var script="load 'structures/200.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
+var script="load 'structures/grain_200_grid-close.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
 jmolApplet(size_jsmol, script); 
 </script>
 </tr>
@@ -73,11 +73,11 @@ else {
 }
 </script>
 <table>
-      <tr><center><h4>500 H<sub>2</sub>O</h4></center></tr>
+      <tr><center><h4>Final positions of NH<sub>3</sub></h4></center></tr>
 <tr>
 <script type="text/javascript">
 <!-- estudenates... -->
-var script="load 'structures/500.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
+var script="load 'structures/grain_200_all_output.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
 jmolApplet(size_jsmol, script); 
 </script>
 </tr>
@@ -113,11 +113,11 @@ else {
 }
 </script>
 <table>
-      <tr><center><h4>900 H<sub>2</sub>O</h4></center></tr>
+      <tr><center><h4>Final positions after cleaning</h4></center></tr>
 <tr>
 <script type="text/javascript">
 <!-- estudenates... -->
-var script="load 'structures/900.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
+var script="load 'structures/grain_200_all_output_kept.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
 jmolApplet(size_jsmol, script); 
 </script>
 </tr>
