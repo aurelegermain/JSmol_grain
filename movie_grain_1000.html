@@ -28,19 +28,19 @@ var height = window.innerHeight
 
 if (width<height) {
       var size_jsmol = width*0.90
-      var script="load 'structures/movie_output_0.xyz';load APPEND 'structures/movie_output_1.xyz';load APPEND 'structures/movie_output_2.xyz';load APPEND 'structures/movie_output_3.xyz';load APPEND 'structures/movie_output_4.xyz';" + "background white; zoom 100; anim mode once; anim off; anim direction +1";
+      var script="load 'structures/movie_output_0.xyz';load APPEND 'structures/movie_output_1.xyz';load APPEND 'structures/movie_output_2.xyz';load APPEND 'structures/movie_output_3.xyz';load APPEND 'structures/movie_output_4.xyz';" + "background white; zoom 100; anim mode once; anim off; frame 1";
       }
 else {
       var size_jsmol = (width/3)*0.90
-      var script="load 'structures/movie_output_a.xyz.gz';load APPEND 'structures/movie_output_b.xyz.gz';" + "background white; zoom 100; anim mode once; anim off;anim direction +1";
+      var script="load 'structures/movie_output_a.xyz.gz';load APPEND 'structures/movie_output_b.xyz.gz';" + "background white; zoom 100; anim mode once; anim off;frame 1";
       }
 <!-- specificare molecola... -->
 jmolApplet(size_jsmol, script); 
 </script>
 </tr>
 <tr>
-      <button onclick="jmolScript('anim off; anim on;');">
-      RESTART
+      <button onclick="jmolScript('frame 1;');">
+      START
       </button>
       <button onclick="jmolScript('anim off');">
       PAUSE
@@ -53,6 +53,9 @@ jmolApplet(size_jsmol, script);
       </button>
       <button onclick="jmolScript('frame next');">
       NEXT
+      </button>
+      <button onclick="jmolScript('frame 1110');">
+      END
       </button>
 </tr>
 <p>
