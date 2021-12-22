@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>MOLDRAW --> Jmol </title>
+<title>Movie of the 1000 H<sub>2</sub>O grain building process</title>
 <script src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js" type="text/javascript"></script>
 <script src="https://chemapps.stolaf.edu/jmol/jsmol/js/Jmol2.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -12,8 +12,8 @@ jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
 <body>
 <center>
 <div id="mainContent">
-<h2>Utilizzare Jsmol dal server web Stolaf</h2>
-<br>Qui potete aggiungere ulteriore testo di commento.
+<h2>Movie of the 1000 H<sub>2</sub>O grain building process</h2>
+<h3 style="color:red;>Disclaimer: The loading of the movie can takes several minutes. <br> It is not advised to watch it on a phone or tablet.</h3>
 <p>
 <table>
 <tr>
@@ -64,7 +64,13 @@ jmolApplet(size_jsmol, script);
       ["spacefill 100%", "van der Waals"]
       ]); jmolBr(); jmolBr();
 </script>
-<td width="100">
+<script>
+      jmolRadioGroup([
+      ["hbonds off", "H-bonds off"],
+      ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on", "checked"]
+      ]); jmolBr(); jmolBr();
+</script>
+<td width="150">
 <script>
       jmolCheckbox("spin on", "spin off", "spin"); 
       jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
@@ -90,7 +96,6 @@ jmolApplet(size_jsmol, script);
 </tr>
 </table>
 <P>
-<i>Piero Ugliengo, 10/08/2014</i>
 </center>
 </body>
 </html>
