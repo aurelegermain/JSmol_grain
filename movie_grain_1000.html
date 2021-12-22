@@ -39,20 +39,20 @@ jmolApplet(size_jsmol, script);
 </script>
 </tr>
 <tr>
-      <button onclick="jmolScript('frame 1;');">
+      <button onclick="jmolScript('frame prev;');">
       START
       </button>
       <button onclick="jmolScript('anim off');">
       PAUSE
-      </button>
-      <button onclick="jmolScript('frame PLAY');">
-      RESUME
       </button>
       <button onclick="jmolScript('frame prev');">
       PREV
       </button>
       <button onclick="jmolScript('frame next');">
       NEXT
+      </button>
+      <button onclick="jmolScript('anim on');">
+      BEGINNING
       </button>
       <button onclick="jmolScript('frame 1110');">
       END
@@ -65,12 +65,6 @@ jmolApplet(size_jsmol, script);
       ["spacefill off", "sticks"],
       ["spacefill 25%", "sticks and balls", "checked"],
       ["spacefill 100%", "van der Waals"]
-      ]); jmolBr(); jmolBr();
-</script>
-<script>
-      jmolRadioGroup([
-      ["hbonds off", "H-bonds off", "checked"],
-      ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on"]
       ]); jmolBr(); jmolBr();
 </script>
 <td width="150">
