@@ -39,14 +39,14 @@ jmolApplet(size_jsmol, script);
 </script>
 </tr>
 <tr>
-      <button onclick="jmolScript('anim on');">
+      <button onclick="jmolScript('anim off; anim on;');">
       RESTART
       </button>
-      <button onclick="jmolScript('frame PLAY');">
-      ON
+      <button onclick="jmolScript('frame off');">
+      PAUSE
       </button>
-      <button onclick="jmolScript('anim off');">
-      OFF
+      <button onclick="jmolScript('anim PLAY');">
+      RESUME
       </button>
       <button onclick="jmolScript('frame prev');">
       PREV
