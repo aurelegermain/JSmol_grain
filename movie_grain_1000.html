@@ -17,9 +17,23 @@ jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
 <table>
 <tr>
 <script type="text/javascript">
+var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+if (width<height) {
+      var size_jsmol = width*0.90
+      }
+else {
+      var size_jsmol = (width/3)*0.90
+      }
 <!-- specificare molecola... -->
-var script="load 'structures/movie_output_0.xyz.gz';load APPEND 'structures/movie_output_1.xyz.gz';load APPEND 'structures/movie_output_2.xyz.gz';load APPEND 'structures/movie_output_3.xyz.gz';" + "background white; zoom 100; anim mode loop; anim on";
-jmolApplet(400, script); 
+var script="load 'structures/movie_output_0.xyz';load APPEND 'structures/movie_output_1.xyz';load APPEND 'structures/movie_output_2.xyz';load APPEND 'structures/movie_output_3.xyz';load APPEND 'structures/movie_output_4.xyz';" + "background white; zoom 100; anim mode loop; anim on";
+jmolApplet(size_jsmol, script); 
 </script>
 </tr>
 <p>
