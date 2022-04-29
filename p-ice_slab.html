@@ -1,0 +1,84 @@
+<head>
+<title>P-ice structure JSmol visualisation</title>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/js/Jmol2.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+Jmol.Info=[]
+Jmol.Info.serverURL= "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php"
+jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
+</script>
+</head>
+<body>
+<div id="mainContent">
+<center>
+<h2>Grain structure JSmol visualisation</h2>
+<p>
+<table>
+<tr>
+<script type="text/javascript">
+ var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+if (width<height) {
+      var size_jsmol = width*0.90
+      }
+else {
+      var size_jsmol = (width/3)*0.90
+      } 
+ 
+<!-- specificare molecola... -->
+var script="load 'structures/p-ice_slab.xyz';" + "background white; zoom 100; anim mode loop; anim on; calculate hbonds; color hbonds lightgrey; hbonds 0.04";
+jmolApplet(size_jsmol, script); 
+</script>
+</tr>
+<p>
+<tr>
+<script>
+      jmolRadioGroup([
+      ["spacefill off", "sticks"],
+      ["spacefill 25%", "sticks and balls", "checked"],
+      ["spacefill 100%", "van der Waals"]
+      ]); jmolBr(); jmolBr();
+</script>
+<script>
+      jmolRadioGroup([
+      ["hbonds off", "H-bonds off"],
+      ["calculate hbonds; color hbonds lightgrey; hbonds 0.04", "H-bonds on", "checked"]
+      ]); jmolBr(); jmolBr();
+</script>
+<td width="150">
+<script>
+      jmolCheckbox("spin on", "spin off", "spin"); 
+      jmolCheckbox("set antialiasDisplay true", "set antialiasDisplay false", "alias"); 
+</script>
+</td>
+<td width="150" >
+<script>
+      jmolButton("reset", "Starting"); 
+</script>
+</td>
+<td width="100" >
+<script>
+      jmolMenu([
+      ["background white", null, "selected"],
+      "background skyblue", 
+      "background yellow",
+      "background salmon",
+      "background palegreen",
+      "background black",
+      ]);
+</script>
+</td>
+</tr>
+</table>
+<P>
+</center>
+</div>
+</body>
+</html>
